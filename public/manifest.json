@@ -1,0 +1,9 @@
+{
+    "name": "Getting started",
+    "description": "This is a sample project to get you started with the new version of the SDK.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

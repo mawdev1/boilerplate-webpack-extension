@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 780px;
+    height: 600px;
+    /* same bg color as primary theme */
+    background-color: #fff;
+
+}
