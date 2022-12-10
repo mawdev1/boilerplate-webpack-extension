@@ -4,10 +4,14 @@ const CopyPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-    entry: './src/popup.jsx',
+    entry: {
+        popup: './src/popup.jsx',
+        contentScript: './public/scripts/content/content.js',
+        background: './public/scripts/background/background.js',
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].js',
+        filename: '[name].bundle.js',
     },
     module: {
         rules: [

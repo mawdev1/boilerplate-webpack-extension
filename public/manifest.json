@@ -1,9 +1,22 @@
 {
-    "name": "Getting started",
-    "description": "This is a sample project to get you started with the new version of the SDK.",
+    "name": "Boilerplate Extension Webpack",
+    "description": "Boilerplate - Extension, Webpack, React, Material Ui.",
     "version": "1.0.0",
     "manifest_version": 3,
     "action": {
         "default_popup": "popup.html"
-    }
+    },
+    "background": {
+        "service_worker": "background.bundle.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "contentScript.bundle.js"
+            ]
+        }
+    ]
 }
